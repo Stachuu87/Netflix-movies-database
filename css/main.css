@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Arial", sans-serif;
+}
+
+body{
+    background-color: lightslategrey;
+}
+
+.app{
+    max-width: 1250px;
+    width: 100vw;
+    margin: 0 auto;
+
+}
+
+.searchBar{
+    width: 100%;
+    height: 15vh;
+    background-color: darkred;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo{
+    background-image: url("../images/play_movie_3-512.png");
+    background-size: contain;
+    height: 90%;
+    width: 10%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.searchBar>input,
+.searchBar>select,
+.searchBar>button {
+    height: 30px;
+    border: 1px solid white;
+    padding: 0;
+    font-size: 20px;
+    color: white;
+}
+
+.searchBar>input:focus,
+.searchBar>select:focus,
+.searchBar>button:focus {
+    background-color: white;
+    color: black;
+    border: none;
+    outline: 1px solid black;
+}
+
+.searchBar>input,
+.searchBar>select {
+    background-color: black;
+}
+
+.searchBar>input{
+    width: 50%;
+}
+
+.searchBar>select{
+    width: 20%;
+}
+
+.searchBar>button{
+    background-color: darkred;
+    width: 80px;
+    text-align: center;
+    font-weight: 700;
+    margin: right: 3%;
+}
+
+.results>ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.moviePos{
+    width: 200px;
+    height: 280px;
+    margin: 20px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    border: 3px solid black;
+    background-color: lightgray;
+    padding-top: 8px;
+    font-size: 11px;
+    text-align: center;
+    transition: all 200ms ease;
+}
+
+.moviePos:hover{
+    transform: scale(1.05);
+}
+
+.position{
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.moviePos img{
+    height: 200px;
+    margin-bottom: 8px;
+}
